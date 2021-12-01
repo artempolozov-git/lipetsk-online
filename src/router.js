@@ -28,6 +28,7 @@ const router = new Router({
         {
             path: '/pool',
             name: 'pool',
+            props: true,
             components: {
                 header: Header,
                 menu: Menu,
@@ -37,6 +38,40 @@ const router = new Router({
             },
             meta: {
                 title: 'Липецк online | Бассейн',
+                description: '',
+            },
+            children: [],
+        },
+        {
+            path: '/zoo',
+            name: 'zoo',
+            props: true,
+            components: {
+                header: Header,
+                menu: Menu,
+                footer: Footer,
+                //aside: Aside,
+                default: () => import('@/pages/Zoo.vue')
+            },
+            meta: {
+                title: 'Липецк online | Зоопарк',
+                description: '',
+            },
+            children: [],
+        },
+        {
+            path: '/zoo-tickets',
+            name: 'zoo-tickets',
+            props: true,
+            components: {
+                header: Header,
+                menu: Menu,
+                footer: Footer,
+                //aside: Aside,
+                default: () => import('@/pages/ZooTickets.vue')
+            },
+            meta: {
+                title: 'Липецк online | Билеты в зоопарк',
                 description: '',
             },
             children: [],

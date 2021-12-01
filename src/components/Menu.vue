@@ -22,7 +22,6 @@
     padding: 0 20px;
     position: relative;
     bottom: 30px;
-    z-index: 2;
   }
   .menu-icon > img {
     width: 5vw;

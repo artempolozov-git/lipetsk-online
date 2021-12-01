@@ -36,41 +36,49 @@
 </script>
 
 <style scoped>
-.footer__main__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  padding: 20px;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px -8px 5px -5px rgba(164, 164, 163, 0.8);
-  -moz-box-shadow: 0px -8px 5px -5px rgba(164, 164, 163, 0.8);
-  box-shadow: 0px -8px 5px -5px rgba(164, 164, 163, 0.8);
-  position: sticky;
-  bottom: 0;
-  z-index: 2;
-}
-.footer-buttons {
-  width: max-content;
-}
-.indent {
-  margin-left: auto;
-}
-.image-button {
-  display: flex;
-  justify-content: center;
-}
-.image-button > img {
-  width: 6vw;
-  margin-bottom: 5px;
-}
-.button-content{
-  margin: 0;
-  color: #8EB4B4;
-}
-.color-blue {
-  color: #0072B9;
-}
+  @media only screen and (max-width : 768px) {
+    .footer__main__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      padding: 20px;
+      background-color: #ffffff;
+      -webkit-box-shadow: 0px -8px 5px -5px rgba(164, 164, 163, 0.8);
+      -moz-box-shadow: 0px -8px 5px -5px rgba(164, 164, 163, 0.8);
+      box-shadow: 0px -8px 5px -5px rgba(164, 164, 163, 0.8);
+      position: sticky;
+      bottom: 0;
+      z-index: 2;
+    }
+
+    .footer-buttons {
+      width: max-content;
+    }
+
+    .indent {
+      margin-left: auto;
+    }
+
+    .image-button {
+      display: flex;
+      justify-content: center;
+    }
+
+    .image-button > img {
+      width: 6vw;
+      margin-bottom: 5px;
+    }
+
+    .button-content {
+      margin: 0;
+      color: #8EB4B4;
+    }
+
+    .color-blue {
+      color: #0072B9;
+    }
+  }
 @media only screen and (max-width : 450px) {
   .footer__main__container {
     padding: 25px 15px;

@@ -3,17 +3,17 @@
     <div class="background-image__block"></div>
     <div class="home__wrapper__content">
       <menu-slider></menu-slider>
-      <home-content></home-content>
+      <main-events></main-events>
     </div>
   </section>
 </template>
 
 <script>
     import MenuSlider from "@/components/MenuSlider";
-    import HomeContent from "@/components/HomeContent";
+    import MainEvents from "@/components/MainEvents";
     export default {
         name: "Home",
-        components: {HomeContent, MenuSlider}
+        components: {MainEvents, MenuSlider}
     }
 </script>
 

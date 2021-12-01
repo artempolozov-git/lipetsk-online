@@ -117,7 +117,7 @@
 .title-content {
   margin: 0;
   font-weight: normal;
-  font-size: 8vw;
+  font-size: 6vw;
   text-transform: uppercase;
 }
 .additional-content {

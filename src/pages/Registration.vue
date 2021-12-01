@@ -72,8 +72,9 @@
   margin-top: 30px;
 }
 .data-input > input {
+  display: flex;
   width: 100%;
-  height: 50px;
+  height: 10vw;
   font-size: 3vw;
   font-family: Roboto;
   border-radius: 15px;
