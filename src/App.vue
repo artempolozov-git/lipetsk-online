@@ -12,15 +12,14 @@
 </template>
 
 <script>
-
-export default {
-    name: 'App',
-    computed: {
-        defaultViewKey: function() {
-            return this.$route.name;
-        }
-    }
-}
+  export default {
+      name: 'App',
+      computed: {
+          defaultViewKey: function() {
+              return this.$route.name;
+          }
+      },
+  }
 </script>
 
 <style>

@@ -12,6 +12,7 @@ const router = new Router({
         {
             path: '/',
             name: 'home',
+            props: true,
             components: {
                 header: Header,
                 menu: Menu,
@@ -77,8 +78,43 @@ const router = new Router({
             children: [],
         },
         {
+            path: '/payment',
+            name: 'payment',
+            props: true,
+            components: {
+                header: Header,
+                menu: Menu,
+                footer: Footer,
+                //aside: Aside,
+                default: () => import('@/pages/Payment.vue')
+            },
+            meta: {
+                title: 'Липецк online | Подтвердите заказ',
+                description: '',
+            },
+            children: [],
+        },
+        {
+            path: '/orders',
+            name: 'orders',
+            props: true,
+            components: {
+                header: Header,
+                menu: Menu,
+                footer: Footer,
+                //aside: Aside,
+                default: () => import('@/pages/Orders.vue')
+            },
+            meta: {
+                title: 'Липецк online | Мои заказы',
+                description: '',
+            },
+            children: [],
+        },
+        {
             path: '/registration',
             name: 'registration',
+            props: true,
             components: {
                 header: Header,
                 menu: Menu,

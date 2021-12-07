@@ -4,7 +4,7 @@
       <div class="image-button"><img src="@/assets/icons/main.svg"></div>
       <p class="button-content color-blue">Главная</p>
     </div>
-    <div class="footer-buttons indent">
+    <div class="footer-buttons indent" v-on:click="goToPage('orders')">
       <div class="image-button"><img src="@/assets/icons/favorites.svg"></div>
       <p class="button-content">Избранное</p>
     </div>
@@ -13,10 +13,10 @@
       <p class="button-content">Карты</p>
     </div>
     <div class="footer-buttons indent">
-      <div class="image-button"><img src="@/assets/icons/basket.svg"></div>
+      <div class="image-button" v-on:click="goToPage('payment')"><img src="@/assets/icons/basket.svg"></div>
       <p class="button-content">Корзина</p>
     </div>
-    <div class="footer-buttons indent" v-on:click="goToPage('/registration')">
+    <div class="footer-buttons indent" v-on:click="goToPage('registration')">
       <div class="image-button"><img src="@/assets/icons/profile.svg"></div>
       <p class="button-content">Профиль</p>
     </div>
